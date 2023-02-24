@@ -4,7 +4,7 @@
 }
 
 body {
-  padding-top: 45px;
+  padding-top: 40px;
   height: 500vh;
 }
 
@@ -33,6 +33,6 @@ li:hover {
 
 @media (max-width: 400px) {
   body {
-    padding-top: 75px;
+    padding-top: 40px;
   }
 }
