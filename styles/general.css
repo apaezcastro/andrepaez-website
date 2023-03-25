@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  padding-top: 40px;
+  
+  background-color: rgb(172, 181, 181);
+  font-family: Tahoma;
+}
+
+header {
+  display: flex; 
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  background-color: rgb(5, 7, 12); 
+  color: white;
+  padding: 25px;
+}
+
+main {
+  padding: 0% 15%;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+ul {
+  display: flex; 
+  list-style-type: none; 
+  text-decoration: none;
+  margin-left: 900px;
+}
+
+li {
+  padding: 10px;
+  color: white;
+  
+}
+
+
+li:hover {
+  background-color: rgb(145, 141, 141);
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#voltaire-quote {
+  width: 30%;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 200px;
+  margin-left: 40px;
+  float: left;
+  font-family: Impact;
+}
+#voltaire-name {
+  font-size: 24px;
+}
+
+#learning {
+  width: 450px;
+  float: right;
+  margin:100px 0px;
+}
+
+#Intro {
+  clear:both;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+#contact{
+  margin-bottom: 12px;
+}
+
+.contact {
+  font-size: 20px;
+  margin: 20px
+}
+
+@media (max-width: 400px) {
+  body {
+    padding-top: 40px;
+  }
+  #learning {
+    width: 100px;
+    float: right;
+  }
+}
