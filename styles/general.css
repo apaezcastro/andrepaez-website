@@ -19,6 +19,8 @@ header {
   background-color: rgb(5, 7, 12); 
   color: white;
   padding: 25px;
+  outline-style: solid;
+  outline-color: white;
 }
 
 main {
