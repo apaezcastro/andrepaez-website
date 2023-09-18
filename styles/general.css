@@ -6,8 +6,7 @@
 body {
   padding-top: 40px;
   
-  background-color: black;
-  background-image: linear-gradient(red, grey);
+  background-color: #5CC8FF;
   font-family: Tahoma;
 }
 
@@ -16,8 +15,8 @@ header {
   position: fixed; 
   top: 0; 
   width: 100%; 
-  background-color: rgb(5, 7, 12); 
-  color: white;
+  
+  color: #2F2F3F;
   padding: 25px;
   outline-style: solid;
   outline-color: white;
