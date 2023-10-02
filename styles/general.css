@@ -1,25 +1,29 @@
+  @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 body {
   padding-top: 40px;
-  
   background-color: #5CC8FF;
-  font-family: Tahoma;
+  font-family: sans-serif
 }
 
 header {
   display: flex; 
-  position: fixed; 
+  position: fixed;
   top: 0; 
   width: 100%; 
-  
+  justify-content: space-between;
+  align-items: center;
   color: #2F2F3F;
-  padding: 25px;
+  padding: 5px 200px 5px 200px;;
   outline-style: solid;
   outline-color: white;
+  font-family: "Pixelify Sans", sans-serif;
 }
 
 main {
@@ -34,7 +38,7 @@ ul {
   display: flex; 
   list-style-type: none; 
   text-decoration: none;
-  margin-left: 900px;
+  width: 100%
 }
 
 li {
