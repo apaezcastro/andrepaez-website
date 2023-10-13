@@ -1,37 +1,28 @@
   @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 
+
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
   padding-top: 40px;
-  background-color: #5CC8FF;
-  font-family: sans-serif
+  background-color: #4a4e50;
+  font-family: sans-serif;
+  color:cadetblue;
+  font-family: "Pixelify Sans", sans-serif;
 }
 
 header {
   display: flex; 
-  position: fixed;
-  top: 0; 
-  width: 100%; 
-  justify-content: space-between;
+  position: sticky;
+  width: 100%;
+  justify-content: space-around;
   align-items: center;
-  color: #2F2F3F;
-  padding: 5px 200px 5px 200px;;
-  outline-style: solid;
-  outline-color: white;
-  font-family: "Pixelify Sans", sans-serif;
-}
-
-main {
-  padding: 0% 15%;
-}
-
-h1 {
-  font-size: 40px;
+  outline-style:groove;
+  outline-color: palevioletred;
+  
 }
 
 ul {
@@ -43,50 +34,21 @@ ul {
 
 li {
   padding: 10px;
-  color: white;
-  
 }
 
 
 li:hover {
-  background-color: rgb(145, 141, 141);
+  background-color: palevioletred;
   text-decoration: none;
 }
+
 a {
   text-decoration: none;
-  color: aliceblue;
+  color: inherit;
 }
 
-#voltaire-quote {
-  width: 30%;
-  text-align: center;
-  font-size: 30px;
-  margin-top: 200px;
-  margin-left: 40px;
-  float: left;
-  font-family: Impact;
-}
-#voltaire-name {
-  font-size: 24px;
-}
-
-#learning {
-  width: 450px;
-  float: right;
-  margin:100px 0px;
-}
-
-#Intro {
-  clear:both;
-  font-size: 30px;
-  margin-bottom: 30px;
-}
-
-#contact{
-  margin-bottom: 12px;
-}
-
-.contact {
-  font-size: 20px;
-  margin: 20px
+main {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
 }
