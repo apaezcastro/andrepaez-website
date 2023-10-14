@@ -8,9 +8,8 @@
 
 body {
   padding-top: 40px;
-  background-color: #4a4e50;
-  font-family: sans-serif;
-  color:cadetblue;
+  background: linear-gradient( #000000, #425054);
+  color: rgb(44, 255, 72);
   font-family: "Pixelify Sans", sans-serif;
 }
 
@@ -21,7 +20,7 @@ header {
   justify-content: space-around;
   align-items: center;
   outline-style:groove;
-  outline-color: palevioletred;
+  outline-color: rgb(82, 30, 98);
   
 }
 
@@ -38,7 +37,7 @@ li {
 
 
 li:hover {
-  background-color: palevioletred;
+  background-color: rgb(82, 30, 98);
   text-decoration: none;
 }
 
