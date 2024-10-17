@@ -3,41 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="styles/general.css" />
+    <title>Andre Paez-Castro - Portfolio</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!--navigation bar -->
-    <header>
-        <div>
-            <h1>Andre Paez</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href= "./posts.html" target="_blank">Posts</a></li>
-                <li><a href="./about-me.html" target="_blank">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header class="header">
+        <h1>Andre Paez-Castro</h1>
+        <nav class="navbar">
+            <a href="#projects">Projects</a>
+            <a href="#blog">Blog</a>
+            <a href="#bio">About Me</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <!--main information-->
-    <main>
-        <article id="title">
-            <h2>Bug Hunter,  Security Engineer<br> Malware Analyst, Programmer</h2>
-            <p></p>
-        </section>
-    </main>
+    <section id="bio" class="bio-section">
+        <h2>About Me</h2>
+        <p>I am Andre Paez-Castro, a Psychology graduate from Western Michigan University with a minor in Cybersecurity. 
+        With a passion for Computer Science, I aim to become a Computer Vision Engineer. My journey includes roles in financial services, marketing, and operations, 
+        where I built skills in web development, customer service, and programming.</p>
+        <p><strong>Key Skills:</strong> Python, JavaScript, C++, Java, Flask, Django, React, Machine Learning, and Network Protocols.</p>
+    </section>
 
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Teak Custom Wood Work</h3>
+                <p>Managed marketing efforts, website maintenance, and invoicing processes to optimize the client experience.</p>
+                <a href="#" target="_blank" class="project-link">View Website</a>
+            </div>
+            <div class="project-card">
+                <h3>Consumers Credit Union</h3>
+                <p>Reduced wait times by 75% and contributed to creating a new help desk system for Spanish-speaking members.</p>
+                <a href="#" target="_blank" class="project-link">Read More</a>
+            </div>
+        </div>
+    </section>
 
-    <!-- Contact bar / footer -->
-    <footer id="contact">
-        <h2 id="contact">Contact Me</h2>
-        <a class="contact" href="https://github.com/apaezcastro" id="profile-link" target="_blank">GitHub</a>
-        <a class="contact" href="mailto:andrepaez98@gmail.com">Email Me</a>
-        <a class="contact" href="https://www.linkedin.com/in/aspc23/" target="_blank">LinkedIn</a>
+    <section id="blog" class="blog-section">
+        <h2>Blog</h2>
+        <div class="blog-container">
+            <div class="blog-card">
+                <h3>Getting Started with Flask</h3>
+                <p>A quick guide to building web apps using Flask, with code examples and best practices.</p>
+                <a href="blog.html" target="_blank" class="blog-link">Read More</a>
+
+            </div>
+            <div class="blog-card">
+                <h3>Network Protocols Explained</h3>
+                <p>An overview of common network protocols such as HTTPS, SMTP, and various VPN protocols.</p>
+                <a href="blog.html" target="_blank" class="blog-link">Read More</a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/aspc23" target="_blank">LinkedIn</a>
+            <a href="https://github.com/apaezcastro" target="_blank">GitHub</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Andre Paez-Castro. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
