@@ -4,8 +4,8 @@ This is the source code for my personal portfolio website, hosted on **GitHub Pa
 
 ## Features
 - **About Me**: Overview of my background and skills.
-- **Projects**: Interactive project cards with descriptions and links.
-- **Blog**: Full posts on topics like Flask and Network Protocols.
+- **Projects**: Project cards with descriptions and links.
+- **Blog**: Full posts on topics like Flask and other tech I am using
 - **Contact**: Links to GitHub, LinkedIn, and other social platforms.
 
 ## Live Site
