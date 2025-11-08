@@ -77,3 +77,43 @@ p {
 .project {
   margin-bottom: 2rem;
 }
+
+.project-links {
+  margin-top: 15px; /* Adds space above the buttons */
+  display: flex;
+  gap: 12px; /* Adds space between the buttons */
+}
+
+/* Style for the primary "Live Demo" button */
+.project-link-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #007bff; /* Example: A nice blue */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project-link-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Style for the secondary "GitHub" button */
+.project-link-btn-secondary {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #6c757d; /* Example: A neutral grey */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project-link-btn-secondary:hover {
+  background-color: #5a6268; /* Darker grey on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
