@@ -96,7 +96,7 @@
         
         for(let i = 1; i <= photoCount; i++) {
             let img = document.createElement('img');
-            img.src = `images/${i}.jpg`; // Make sure your images are named 1.jpg to 10.jpg
+            img.src = `./images/${i}.jpg`; // Make sure your images are named 1.jpg to 10.jpg
             img.className = 'floating-img';
             img.style.left = Math.random() * 90 + '%';
             img.style.animationDelay = Math.random() * 10 + 's';
