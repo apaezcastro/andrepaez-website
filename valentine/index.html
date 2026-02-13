@@ -108,15 +108,8 @@
         
         for(let i = 1; i <= photoCount; i++) {
             let img = document.createElement('img');
-            img.src = `images/${i}.jpg`;
-            img.onerror = function() {
-                if (this.src.endsWith('.jpg')) {
-                    this.src = `images/${i}.jpeg`;
-                } else {
-                    // If both fail, just remove the broken image element
-                    this.remove();
-                    }
-                    img.className = 'floating-img';
+            img.src = `images/${i}.jpeg`;
+            img.className = 'floating-img';
             
             // Random horizontal position
             img.style.left = (Math.random() * 80 + 5) + '%';
