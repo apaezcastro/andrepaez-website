@@ -1,5 +1,5 @@
 // Smooth scrolling effect for navigation links
-document.querySelectorAll('.sidebar a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('#sidebar a[href^="#"], #bottom-nav a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const targetId = this.getAttribute('href').substring(1);

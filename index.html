@@ -15,8 +15,7 @@
 </head>
 <body>
       <!-- Sidebar Navigation -->
-    <nav class="sidebar">
-        <h2>Andre Paez Castro</h2>
+    <nav id="sidebar">
         <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -26,13 +25,13 @@
     </nav>
   <main>
     <!-- Hero / Intro -->
-    <section class="hero">
+    <section id="hero">
       <h1>Andre Paez Castro</h1>
       <p>Exploring XR, Intelligent Systems & AI</p>
     </section>
 
     <!-- About -->
-    <section class="about">
+    <section id="about">
     <h2>About Me</h2>
     <p>
       Hi, I’m Andre Paez Castro, a Graduate student in Information Science at the <strong>University of Pittsburgh</strong>, where I currently maintain a <strong>4.0 GPA</strong>. I hold a B.S. in Psychology with a minor in Cybersecurity from Western Michigan University, where I was a Dean’s List honoree and inducted into the Tau Sigma National Honor Society.
@@ -46,7 +45,7 @@
     </section>
 
     <!-- Projects -->
-    <section class="projects">
+    <section id="projects">
       <h2>Projects</h2>
       <div class="project">
         <h3>Emotion Detection App</h3>
@@ -60,10 +59,10 @@
           This project is deployed on <strong>Microsoft Azure</strong> and features a full <strong>CI/CD pipeline</strong> using <strong>GitHub Actions</strong> for automated builds and deployment.
         </p>
         <div class="project-links">
-          <a href="https://andre-emotion-app.azurewebsites.net" class="project-link-btn" target="_blank" rel="noopener noreferrer">
+          <a href="https://andre-emotion-app.azurewebsites.net" class="project-link-btn project-link-btn-primary" target="_blank" rel="noopener noreferrer">
             View Live Demo
           </a>
-          <a href="https://github.com/apaezcastro/emotiontracker" class="project-link-btn-secondary" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/apaezcastro/emotiontracker" class="project-link-btn project-link-btn-secondary" target="_blank" rel="noopener noreferrer">
             GitHub Repo
           </a>
         </div>
@@ -77,7 +76,7 @@
           The application leverages <strong>Supabase</strong> for backend data management and is deployed on <strong>Vercel</strong>. By implementing modern SEO practices and automated deployment workflows, the platform successfully converted digital traffic into the company's first-ever online sales leads.
         </p>
         <div class="project-links">
-          <a href="https://teakwoodwork.com" class="project-link-btn" target="_blank" rel="noopener noreferrer">
+          <a href="https://teakwoodwork.com" class="project-link-btn project-link-btn-primary" target="_blank" rel="noopener noreferrer">
             View Live Site
           </a>
         </div>
@@ -94,7 +93,7 @@
           <b>Password:</b> immersivemedia
         </p>
         <div class="project-links">
-          <a href="https://apaezcastro.itch.io/frontier-hunt" class="project-link-btn" target="_blank" rel="noopener noreferrer">
+          <a href="https://apaezcastro.itch.io/frontier-hunt" class="project-link-btn project-link-btn-primary" target="_blank" rel="noopener noreferrer">
             View on Itch.io
           </a>
         </div>
@@ -102,7 +101,7 @@
     </section>
     
     <!-- Contact -->
-    <section class="contact">
+    <section id="contact">
       <h2>Contact</h2>
       <p>
         <a href="mailto:andrepaez98@gmail.com">andrepaez98@gmail.com</a>
@@ -113,6 +112,11 @@
       </p>
     </section>
   </main>
-
+  <nav id="bottom-nav">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="devlogs">Devlogs</a>
+  </nav>
 </body>
 </html>
