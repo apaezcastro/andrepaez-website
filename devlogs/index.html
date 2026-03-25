@@ -1,68 +1,78 @@
-<link rel="stylesheet" href="styles.css">
-
-<div class="back-nav">
-    <a href="../" class="back-btn">&larr; Back to Home</a>
-</div>
-
-<article class="devlog-card">
-    <header class="devlog-header">
-        <h2 class="devlog-title">Setting up XR Dev Environment & Sideloading APK to Quest</h2>
-        <div class="devlog-meta">
-            <span class="date">February 28, 2026</span> | 
-            <span class="category">Unreal Engine 5.7</span>
-        </div>
-    </header>
-
-    <div class="devlog-content">
-        <p class="method-box"><strong>Method:</strong> Manual SDK/NDK/JDK Alignment (Bypassing Turnkey errors)</p>
-
-        <h3>Resources & Documentation</h3>
-        <ul class="resource-list">
-            <li><a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/android-development-requirements-for-unreal-engine" target="_blank">Official Guide: Android Development Requirements for UE 5.7</a></li>
-            <li><a href="https://www.youtube.com/watch?v=77SkxzYJWHU" target="_blank">Video Tutorial: TinkerAcademy - Packaging VR Projects (The Easy Way)</a></li>
-        </ul>
-
-        <h3>1. Core Software Environment</h3>
-        <ul>
-            <li><strong>Engine Version:</strong> Unreal Engine 5.7</li>
-            <li><strong>Android Studio:</strong> Koala 2024.1.2 Patch 1 (Sept 17, 2024)</li>
-            <li><strong>Components:</strong> SDK Command-line Tools (installed via Android Studio SDK Manager)</li>
-        </ul>
-
-        <h3>2. SDK Management & Configuration</h3>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Setting</th>
-                        <th>Verified Path / Value</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Android SDK</td><td><code>C:/Users/andre/AppData/Local/Android/Sdk</code></td></tr>
-                    <tr><td>Android NDK</td><td><code>C:/Users/andre/AppData/Local/Android/Sdk/ndk/27.2.12479018</code></td></tr>
-                    <tr><td>JAVA (JDK)</td><td><code>C:/Program Files/Android/Android Studio/jbr</code></td></tr>
-                    <tr><td>SDK API Level</td><td><code>android-34</code></td></tr>
-                    <tr><td>NDK API Level</td><td><code>android-29</code></td></tr>
-                </tbody>
-            </table>
-        </div>
-        <h3>3. Packaging Process</h3>
-        <ol>
-            <li>Navigate to <strong>Platforms > Android > Package Project</strong>.</li>
-            <li>Select the radio button for <strong>Android</strong> and then <strong>Android ASTC</strong>.</li>
-            <li>Select <strong>Package Project</strong> at the top of the menu.</li>
-            <li>Create a dedicated <code>Build</code> folder within the main project directory and select it as the destination.</li>
-        </ol>
-
-        <h3>4. Deployment & Sideloading</h3>
-        <blockquote>
-            <strong>Pre-Deployment:</strong> Enable USB Debugging in the Meta Horizon app (Developer Mode), connect via USB.
-        </blockquote>
-        <ol>
-            <li>Navigate to your <code>/Build/Android_ASTC/</code> folder.</li>
-            <li>Run <code>Install_MyFirstVRProject-arm64.bat</code> to push to the headset.</li>
-            <li>Open via <strong>App Library > Unknown Sources</strong> on the Quest.</li>
-        </ol>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devlog | Andre Paez Castro</title>
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="back-nav">
+        <a href="../" class="back-btn">&larr; Back to Home</a>
     </div>
-</article>
+
+    <article class="devlog-card">
+        <header class="devlog-header">
+            <h2 class="devlog-title">Setting up XR Dev Environment & Sideloading APK to Quest</h2>
+            <div class="devlog-meta">
+                <span class="date">February 28, 2026</span> | 
+                <span class="category">Unreal Engine 5.7</span>
+            </div>
+        </header>
+
+        <div class="devlog-content">
+            <p class="method-box"><strong>Method:</strong> Manual SDK/NDK/JDK Alignment (Bypassing Turnkey errors)</p>
+
+            <h3>Resources & Documentation</h3>
+            <ul class="resource-list">
+                <li><a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/android-development-requirements-for-unreal-engine" target="_blank">Official Guide: Android Development Requirements for UE 5.7</a></li>
+                <li><a href="https://www.youtube.com/watch?v=77SkxzYJWHU" target="_blank">Video Tutorial: TinkerAcademy - Packaging VR Projects (The Easy Way)</a></li>
+            </ul>
+
+            <h3>1. Core Software Environment</h3>
+            <ul>
+                <li><strong>Engine Version:</strong> Unreal Engine 5.7</li>
+                <li><strong>Android Studio:</strong> Koala 2024.1.2 Patch 1 (Sept 17, 2024)</li>
+                <li><strong>Components:</strong> SDK Command-line Tools (installed via Android Studio SDK Manager)</li>
+            </ul>
+
+            <h3>2. SDK Management & Configuration</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Setting</th>
+                            <th>Verified Path / Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Android SDK</td><td><code>C:/Users/andre/AppData/Local/Android/Sdk</code></td></tr>
+                        <tr><td>Android NDK</td><td><code>C:/Users/andre/AppData/Local/Android/Sdk/ndk/27.2.12479018</code></td></tr>
+                        <tr><td>JAVA (JDK)</td><td><code>C:/Program Files/Android/Android Studio/jbr</code></td></tr>
+                        <tr><td>SDK API Level</td><td><code>android-34</code></td></tr>
+                        <tr><td>NDK API Level</td><td><code>android-29</code></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3>3. Packaging Process</h3>
+            <ol>
+                <li>Navigate to <strong>Platforms > Android > Package Project</strong>.</li>
+                <li>Select the radio button for <strong>Android</strong> and then <strong>Android ASTC</strong>.</li>
+                <li>Select <strong>Package Project</strong> at the top of the menu.</li>
+                <li>Create a dedicated <code>Build</code> folder within the main project directory and select it as the destination.</li>
+            </ol>
+
+            <h3>4. Deployment & Sideloading</h3>
+            <blockquote>
+                <strong>Pre-Deployment:</strong> Enable USB Debugging in the Meta Horizon app (Developer Mode), connect via USB.
+            </blockquote>
+            <ol>
+                <li>Navigate to your <code>/Build/Android_ASTC/</code> folder.</li>
+                <li>Run <code>Install_MyFirstVRProject-arm64.bat</code> to push to the headset.</li>
+                <li>Open via <strong>App Library > Unknown Sources</strong> on the Quest.</li>
+            </ol>
+        </div>
+    </article>
+</body>
+</html>
