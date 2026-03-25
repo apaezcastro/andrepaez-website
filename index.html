@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Andre Paez Castro | AI & XR Portfolio</title>
-    <meta name="description" content="The personal website and professional portfolio of Andre Paez Castro, a graduate student focusing on the intersection of AI and XR technologies for a education, training, and fun.">
+    <title>Andre Paez Castro | XR Developer & Graduate Researcher</title>
+    <meta name="description" content="Portfolio of Andre Paez Castro, a graduate student at the University of Pittsburgh building XR and AI applications for medical and educational use cases.">
     <meta name="keywords" content="Andre Paez Castro, AI, Intelligent Systems, XR, Python, Flask, React, Unity, Unreal, Portfolio, University of Pittsburgh">
     <meta name="author" content="Andre Paez Castro">
 
@@ -27,20 +27,19 @@
     <!-- Hero / Intro -->
     <section id="hero">
       <h1>Andre Paez Castro</h1>
-      <p>Exploring XR, Intelligent Systems & AI</p>
     </section>
 
     <!-- About -->
     <section id="about">
     <h2>About Me</h2>
     <p>
-      Hi, I’m Andre Paez Castro, a Graduate student in Information Science at the <strong>University of Pittsburgh</strong>, where I currently maintain a <strong>4.0 GPA</strong>. I hold a B.S. in Psychology with a minor in Cybersecurity from Western Michigan University, where I was a Dean’s List honoree and inducted into the Tau Sigma National Honor Society.
+      I'm a graduate student at the University of Pittsburgh studying Information Science with a focus on XR and AI. My background is in Psychology, which gives me a different perspective on this work. XR is an inherently human technology, and understanding the person in the loop matters as much as the tech itself.
     </p>
     <p>
-      My expertise lies at the intersection of <strong>AI, Intelligent Systems, and Immersive Technologies</strong>. I am dedicated to architecting scalable software solutions and exploring how Computer Vision can be leveraged to create more intuitive, high-impact digital experiences.
+      What drew me to XR is the idea of genuinely extending human senses, not just screens you wear, but tools that change how you perceive and interact with the world. Right now I'm building TranslationXR, an AR app that overlays the real world with language markers to make learning feel more intuitive and connected to real life.
     </p>
     <p>
-      I build with a versatile stack including <strong>Python, Flask, JavaScript, C#, and Unity</strong>. Whether developing data-driven backends or interactive XR applications, I am motivated by the challenge of engineering innovative tools that solve complex problems. I’m always eager to connect with like-minded professionals and explore new opportunities in the tech landscape.
+      I'm working toward a career in medical or educational XR, spaces where that human-centered perspective actually matters.
     </p>
     </section>
 
@@ -48,32 +47,40 @@
     <section id="projects">
       <h2>Projects</h2>
       <div class="project">
-        <h3>Emotion Detection App</h3>
+        <h3>TranslationXR <span style="font-size: 0.875rem; color: #666; font-weight: normal;">(In Development)</span></h3>
         <p>
-          This application performs <strong>real-time emotion recognition</strong> by analyzing a user's webcam feed. It leverages a lightweight <strong>ONNX (Open Neural Network Exchange)</strong> model for efficient, client-side inference, paired with a minimal <strong>Flask backend</strong> to serve the application. The primary goal was to create a responsive tool that demonstrates the power of computer vision models running live on the cloud.
+          An AR language learning app for Meta Quest 3S that overlays the real world with translation markers. Point at an object, see its name in another language. The goal is to make vocabulary feel connected to real life rather than flashcards.
         </p>
         <p>
-          <strong>Technical Challenge:</strong> Developing for real-world environments highlighted the model's sensitivity to <strong>variable lighting conditions</strong>. This project served as a deep dive into the importance of data augmentation and the limitations of lightweight models compared to higher-parameter alternatives in non-ideal environments.
-        </p>
-        <p>
-          This project is deployed on <strong>Microsoft Azure</strong> and features a full <strong>CI/CD pipeline</strong> using <strong>GitHub Actions</strong> for automated builds and deployment.
+          Built with Unity, AR Foundation, and OpenXR. Object recognition powered by a YOLOv10 model running on device. Flask backend connected to a MySQL database handles vocabulary and user profiles.
         </p>
         <div class="project-links">
-          <a href="https://andre-emotion-app.azurewebsites.net" class="project-link-btn project-link-btn-primary" target="_blank" rel="noopener noreferrer">
-            View Live Demo
-          </a>
-          <a href="https://github.com/apaezcastro/emotiontracker" class="project-link-btn project-link-btn-secondary" target="_blank" rel="noopener noreferrer">
-            GitHub Repo
+        </div>
+      </div>
+      <div class="project">
+        <h3>Frontier Hunt (VR Survival Game)</h3>
+        <p>
+          A VR survival game built for Meta Quest 3. You wake up in a forest, work through a tutorial learning the core mechanics, then fight your way through wolves and eventually a bear using physics based interactions and raycast shooting.
+        </p>
+        <p>
+          What I cared most about was the feeling of being in the world, the weight of the mechanics, the atmosphere. That sense of immersion is what keeps pulling me toward XR.
+        </p>
+        <p>
+          Built with Unity and C# using OpenXR.
+        </p>
+        <div class="project-links">
+          <a href="https://apaezcastro.itch.io/frontier-hunt" class="project-link-btn project-link-btn-primary" target="_blank" rel="noopener noreferrer">
+            View on Itch.io
           </a>
         </div>
       </div>
       <div class="project">
         <h3>Teak Custom Woodwork & Interiors</h3>
         <p>
-          As the <strong>sole developer</strong>, I architected and deployed a professional digital presence from the ground up to serve as the primary lead-generation platform for a custom furniture business. Developed using <strong>Next.js, React, and Tailwind CSS</strong>, the site features a responsive showcase of high-end craftsmanship paired with a custom inquiry system.
+          A full stack website I built for my family's custom furniture business. It handles the business's online presence and customer inquiries.
         </p>
         <p>
-          The application leverages <strong>Supabase</strong> for backend data management and is deployed on <strong>Vercel</strong>. By implementing modern SEO practices and automated deployment workflows, the platform successfully converted digital traffic into the company's first-ever online sales leads.
+          This is my most complete web project. Built with Next.js, React, and Tailwind CSS. Backend data management via Supabase, deployed on Vercel.
         </p>
         <div class="project-links">
           <a href="https://teakwoodwork.com" class="project-link-btn project-link-btn-primary" target="_blank" rel="noopener noreferrer">
@@ -82,19 +89,19 @@
         </div>
       </div>
       <div class="project">
-        <h3>Frontier Hunt (VR Survival Game)</h3>
+        <h3>Emotion Detection App</h3>
         <p>
-          Frontier Hunt is an immersive virtual reality survival experience developed specifically for the <strong>Meta Quest 3</strong>. Built using <strong>Unity and C#</strong>, the project focuses on high-fidelity spatial interactions and physics-based logic. It utilizes the <strong>Meta XR SDK and OpenXR</strong> to implement precise input mapping, including physics-based lantern toggles and environmental interactions.
+          A computer vision app that detects emotions in real time from a webcam feed. I built this to learn how to deploy vision models on small compute, which directly informed how I approach model integration in TranslationXR.
         </p>
         <p>
-          The project emphasizes performance optimization for mobile VR hardware, leveraging efficient 3D asset management and atmospheric lighting to maintain the consistent high frame rates necessary for player comfort.
+          The honest limitation: it runs on Azure but isn't truly real time for video. In hindsight the face detection should have been handled on the frontend with WebSockets for the backend communication. It's a project I learned more from than I expected.
         </p>
         <p>
-          <b>Password:</b> immersivemedia
+          Built with Python, Flask, and ONNX. Deployed on Azure with a CI/CD pipeline via GitHub Actions.
         </p>
         <div class="project-links">
-          <a href="https://apaezcastro.itch.io/frontier-hunt" class="project-link-btn project-link-btn-primary" target="_blank" rel="noopener noreferrer">
-            View on Itch.io
+          <a href="https://github.com/apaezcastro/emotiontracker" class="project-link-btn project-link-btn-secondary" target="_blank" rel="noopener noreferrer">
+            GitHub Repo
           </a>
         </div>
       </div>
