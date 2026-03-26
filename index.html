@@ -88,21 +88,25 @@
           </a>
         </div>
       </div>
-      <div class="project">
-        <h3>Emotion Detection App</h3>
-        <p>
-          A computer vision app that detects emotions in real time from a webcam feed. I built this to learn how to deploy vision models on small compute, which directly informed how I approach model integration in TranslationXR.
-        </p>
-        <p>
-          The honest limitation: it runs on Azure but isn't truly real time for video. In hindsight the face detection should have been handled on the frontend with WebSockets for the backend communication. It's a project I learned more from than I expected.
-        </p>
-        <p>
-          Built with Python, Flask, and ONNX. Deployed on Azure with a CI/CD pipeline via GitHub Actions.
-        </p>
-        <div class="project-links">
-          <a href="https://github.com/apaezcastro/emotiontracker" class="project-link-btn project-link-btn-secondary" target="_blank" rel="noopener noreferrer">
-            GitHub Repo
-          </a>
+        <div class="project">
+          <h3>Emotion Detection App</h3>
+          <p>
+            A computer vision app that detects emotions from a webcam feed in real time. Built to learn how to deploy vision models on small compute — the architecture lessons directly informed how I approach model integration in TranslationXR.
+          </p>
+          <p>
+            Face detection runs entirely in the browser using face-api.js, sending cropped face regions over WebSocket to a Flask backend running FER+ inference on Azure.
+          </p>
+          <p>
+            Built with Python, Flask-SocketIO, ONNXRuntime, face-api.js, Docker, and GitHub Actions.
+          </p>
+          <div class="project-links">
+            <a href="https://andre-emotion-app.azurewebsites.net" class="project-link-btn project-link-btn-primary" target="_blank" rel="noopener noreferrer">
+              View Live Demo
+            </a>
+            <a href="https://github.com/apaezcastro/emotiontracker" class="project-link-btn project-link-btn-secondary" target="_blank" rel="noopener noreferrer">
+              GitHub Repo
+            </a>
+          </div>
         </div>
       </div>
     </section>
